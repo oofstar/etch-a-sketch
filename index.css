@@ -1,0 +1,16 @@
+body {
+}
+
+.row {
+  display: flex;
+}
+.col {
+  flex: 1;
+}
+
+.box {
+  height: 30px;
+  width: 30px;
+  background-color: gray;
+  margin: 6px;
+}
