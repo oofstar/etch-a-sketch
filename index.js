@@ -1,6 +1,6 @@
 const container = document.querySelector('#container');
 
-
+// sets up grid
 for(i = 0; i < 4; i++) {
   let row = document.createElement('div');
   row.classList.add("row");
@@ -14,13 +14,11 @@ rows.forEach((row) => {
     boxDiv.classList.add('box');
     row.appendChild(boxDiv);
   }
+});
 
-}
-
-)
-
-// for (i = 0; i < 16; i++) {
-//   let boxDiv = document.createElement('div');
-//   boxDiv.classList.add('box');
-//   container.appendChild(boxDiv);
-// }
+const boxes = document.querySelectorAll(".box");
+boxes.forEach((box) => {
+  box.addEventListener('mouseover', (e) => {
+    box.style.backgroundColor = "red";
+  });
+});
